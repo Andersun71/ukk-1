@@ -38,7 +38,7 @@
                                         class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Student</label>
                                     <select id="student_id" name="student_id" wire:model="student_id"
                                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                                        <option value="" disabled selected>Select Student</option>
+                                        <option selected="">Select Student</option>
                                         @foreach ($students as $student)
                                             <option value="{{ $student->id }}">{{$student->user->name}}</option>
                                         @endforeach
@@ -52,7 +52,7 @@
                                         class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Teacher</label>
                                     <select id="teacher_id" name="teacher_id" wire:model="teacher_id"
                                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                                        <option value="" disabled selected>Select Teacher</option>
+                                        <option selected="">Select Teacher</option>
                                         @foreach ($teachers as $teacher)
                                             <option value="{{ $teacher->id }}">{{$teacher->user->name}}</option>
                                         @endforeach
@@ -63,7 +63,7 @@
                                         class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Industry</label>
                                     <select id="industry_id" name="industry_id" wire:model="industry_id"
                                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                                        <option value="" disabled selected>Select Industry</option>
+                                        <option selected="">Select Industry</option>
                                         @foreach ($industries as $industry)
                                             <option value="{{ $industry->id }}">{{$industry->name}}</option>
                                         @endforeach
